@@ -1,0 +1,56 @@
+// const date=new date()
+const TestimonialApi = [
+  {
+    id: 1,
+    image: "https://dimikcomputing.com/wp-content/uploads/2016/04/subeen-440x400.jpg",
+    design: "NCD - DESIGN",
+    name: "Mevine Thoda",
+    offcer: "Marketing Officer",
+    post: "CEO - Marketing",
+    date: "Thoda Department - Mar 4, 2018 - Aug 30, 2021",
+    // date: date,
+    desc: "Marcent Of Vanice and treatment. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris",
+  },
+  {
+    id: 2,
+    image: "https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2021/07/08/img_2842_0.jpg",
+    design: "Default name",
+    name: "Davei Luace",
+    offcer: "Chief Operating Manager",
+    post: "Android App Development",
+    date: "via Upwork - Mar 4, 2015 - Aug 30, 2021",
+    desc: "When managment is so important. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris.",
+  },
+  {
+    id: 3,
+    image: "https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0=",
+    design: "Rainbow-Themes",
+    name: "Nevine Acotanza",
+    offcer: "Chief Operating Officer",
+    post: "Android App Development",
+    date: "via Upwork - Mar 4, 2015 - Aug 30, 2021",
+    desc: "Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris.",
+  },
+  {
+    id: 4,
+    image: "https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0=",
+    design: "Bound - Trolola",
+    name: "Jone Duone Joe",
+    offcer: "Operating Officer",
+    post: "Web App Development",
+    date: "Upwork - Mar 4, 2016 - Aug 30, 2021",
+    desc: "Important fact to nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris.",
+  },
+  {
+    id: 5,
+    image: "https://media.istockphoto.com/id/1270067126/photo/smiling-indian-man-looking-at-camera.jpg?s=612x612&w=0&k=20&c=ovIQ5GPurLd3mOUj82jB9v-bjGZ8updgy1ACaHMeEC0=",
+    design: "Glassfisom",
+    name: "Nevine Dhawan",
+    offcer: "CEO Of Officer",
+    post: "Android App Design",
+    date: "Fiver - Mar 4, 2015 - Aug 30, 2021",
+    desc: "No more question for design. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis mauris hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris	.",
+  },
+]
+
+export default TestimonialApi
