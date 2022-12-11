@@ -28,7 +28,8 @@ const Card = (props) => {
         <div className='title'>
           <h2 onClick={toggleModal}>{props.title}</h2>
           <a href='#popup' className='arrow' onClick={toggleModal}>
-            <i class='fas fa-arrow-right'></i>
+            <i class='fas fa-arrow-right'>Details</i>
+            
           </a>
         </div>
       </div>
@@ -39,7 +40,14 @@ const Card = (props) => {
           <div onClick={toggleModal} className='overlay'></div>
           <div className='modal-content d_flex'>
             <div className='modal-img left'>
-              <img src={props.image} alt='' />
+         
+              <img src={props.img1} alt=''  height='200px' />
+              <br />
+            
+            
+              <img src={props.img2} alt=''   height='200px'/>
+              
+              <img src={props.img3} alt=''   height='200px'/>
             </div>
             <div className='modal-text right'>
               <span>Featured - Design</span>
@@ -57,14 +65,20 @@ const Card = (props) => {
 
               </div>
               <div className='button f_flex mtop'>
-                <button className='btn_shadow'>
+                {/* <button className='btn_shadow'>
                   LIKE THIS <i class='far fa-thumbs-up'></i>
+                </button> */}
+                <a href={props.githublink}>
+                <button className='btn_shadow'>
+                  VIEW GithubLink<i class='fas fa-chevron-right'></i>
                 </button>
+                </a>
                 <a href={props.link}>
                 <button className='btn_shadow'>
                   VIEW PROJECT<i class='fas fa-chevron-right'></i>
                 </button>
                 </a>
+                
               </div>
               <button className='close-modal btn_shadow' onClick={toggleModal}>
                 <i class='fas fa-times'></i>

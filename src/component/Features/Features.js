@@ -2,8 +2,10 @@ import React from "react"
 import "./Features.css"
 import data from "./Features-Api"
 import Card from "./Card"
+import useTitle from "../hook/useTitle"
 
 const Features = () => {
+  useTitle('features')
   return (
     <>
       <section className='features top' id='features'>

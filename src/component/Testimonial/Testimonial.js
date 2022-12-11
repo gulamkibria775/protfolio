@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react"
 import "./Testimonial.css"
 import Slide from "./Slide"
 import TestimonialApi from "./TestimonialApi"
+import useTitle from "../hook/useTitle"
 
 const Testimonial = () => {
+  useTitle('project')
   const [data, setdata] = useState(TestimonialApi)
   const [index, setIndex] = useState(0)
 

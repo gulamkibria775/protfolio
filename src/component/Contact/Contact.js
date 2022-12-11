@@ -2,8 +2,9 @@ import React, { useState } from "react"
 import emailjs from 'emailjs-com'
 import contact1 from "./contact1.png"
 import "./Contact.css"
-
+import useTitle from "../hook/useTitle"
 const Contact = () => {
+  useTitle('contact')
   const [data, setData] = useState({
     fullname: "",
     phone: "",

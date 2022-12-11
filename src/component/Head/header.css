@@ -2,6 +2,12 @@ header {
   height: 10vh;
   line-height: 10vh;
 }
+.bioinfo{
+  /* margin-top: -50px; */
+  
+  margin-bottom: 40px;
+ 
+}
 header .container {
   padding-top: 15px;
 }

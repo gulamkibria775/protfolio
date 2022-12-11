@@ -1,8 +1,11 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom";
 import "./header.css"
 import logo from "../pic/logo.png"
+import useTitle from "../hook/useTitle";
 
 const Header = () => {
+  useTitle('header')
   // fixed Header
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header")
@@ -16,37 +19,39 @@ const Header = () => {
         <div className='container d_flex'>
           <div className='logo'>
             {/* <img src={logo} alt='' /> */}
-            <img src='https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2021/07/08/img_2842_0.jpg' width='120px' alt='' />
+            <img src='https://www.tbsnews.net/sites/default/files/styles/infograph/public/images/2021/07/08/img_2842_0.jpg' width='100px' alt='' />
+            <span className="bioinfo">Bioinfo</span>
           </div>
 
           <div className='navlink'>
             <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
               {/*<ul className='link f_flex uppercase {Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}'>*/}
               <li>
-                <a href='#home'>home</a>
+                <Link to='/home'>Home</Link>
               </li>
               <li>
-                <a href='#features'>features</a>
+                <Link to='/features'>Features</Link>
               </li>
               <li>
                 {/* <a href='#portfolio'>portfolio</a> */}
-                <a href='#portfolio'>my-projects</a>
+                <Link to='/portfolio'>Projects</Link>
               </li>
               <li>
-                <a href='https://drive.google.com/file/d/1T-eD-Ytt4jgGBHZWXXxWRvltsy6pPR01/view?usp=share_link' target='_blank' > show-resume</a>
+                <Link to='/resume'>Resume</Link>
                 
               </li>
               <li>
-                <a href='resume1'>resume-download</a>
+                <Link to='/about'>About</Link>
+              </li>
+              {/* <li>
+                <Link to='/clients'>clients</Link>
+              </li> */}
+              <li>
+                {/* <a href='#blog'>blog</a> */}
+                <Link to='/blog'> Blog</Link>
               </li>
               <li>
-                <a href='#clients'>clients</a>
-              </li>
-              <li>
-                <a href='#blog'>blog</a>
-              </li>
-              <li>
-                <a href='#contact'>contact</a>
+                <Link to='/contact'>Contact</Link>
               </li>
              
               {/* <li>

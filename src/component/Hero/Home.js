@@ -1,12 +1,15 @@
 import React from "react"
 import "./Home.css"
-import hero from "../pic/hero.png"
+
+
 import skill1 from "../pic/skill1.png"
 import skill2 from "../pic/skill2.png"
 import skill3 from "../pic/skill3.png"
 import { Typewriter } from "react-simple-typewriter"
+import useTitle from "../hook/useTitle"
 
 const Home = () => {
+useTitle('hero')
   return (
     <>
       <section className='hero' id='home'>
@@ -29,15 +32,18 @@ const Home = () => {
               <div className='col_1'>
                 <h4>FIND WITH ME</h4>
                 <div className='button'>
-                  <button className='btn_shadow'>
+                <a href='https://www.facebook.com/kibria.ahmed.7127146/'>  <button className='btn_shadow'>
                     <i class='fab fa-facebook-f'></i>
                   </button>
+                  </a>
                   <button className='btn_shadow'>
                     <i class='fab fa-instagram'></i>
                   </button>
+                  <a href='https://www.linkedin.com/in/gulam-kibria-a53130219/'>
                   <button className='btn_shadow'>
                     <i class='fab fa-linkedin-in'></i>
                   </button>
+                  </a>
                 </div>
               </div>
               <div className='col_1'>

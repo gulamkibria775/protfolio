@@ -3,15 +3,19 @@ import "../Portfolio/Portfolio.css"
 import "../Blog/Blog.css"
 import Card from "./Card"
 import BlogApi from "./BlogApi"
+import useTitle from '../hook/useTitle'
 
 const Blog = () => {
+  useTitle('block')
   return (
     <>
       <section className='Portfolio Blog' id='blog'>
         <div className='container top'>
           <div className='heading text-center'>
             <h4>VISIT MY BLOG AND KEEP YOUR FEEDBACK</h4>
-            <h1>My Blog</h1>
+            <h3>My Blog</h3>
+
+            <h1>Coming Soon.....!!!!!!!</h1>
           </div>
 
           <div className='content grid'>

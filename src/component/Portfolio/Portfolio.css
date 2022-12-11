@@ -58,7 +58,8 @@
 }
 /*------------popup--------*/
 body.active-modal {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  overflow-y: scroll;
 }
 
 .btn-modal {
@@ -85,7 +86,7 @@ body.active-modal {
 }
 .modal-content {
   position: absolute;
-  top: 12%;
+  top: 5%;
   left: 8%;
   line-height: 1.4;
   background: #f0f3f5;
@@ -99,6 +100,8 @@ body.active-modal {
   border-radius: 10px;
 }
 
+
+
 .modal-text {
   padding: 0 100px 0 50px;
 }
@@ -110,6 +113,7 @@ body.active-modal {
   font-size: 17px;
   margin-bottom: 20px;
   line-height: 25px;
+  text-align: left;
 }
 .modal-text button {
   margin-right: 20px;
@@ -132,6 +136,10 @@ body.active-modal {
 .modal-text button.close-modal i {
   margin: 0;
 }
+/* .modal-content {
+  flex-direction:row;
+
+} */
 /*------------popup--------*/
 @media (max-width: 768px) {
   .modal,
@@ -139,11 +147,14 @@ body.active-modal {
     overflow: scroll;
   }
 
-  .modal .modal-img {
+   .modal-img {
     margin: 50px 0 50px 0;
+    /* width: 200px;
+    height: 100px; */
   }
   .modal-content {
     flex-direction: column;
+  
   }
   .modal .right,
   .modal .left {

@@ -2,8 +2,10 @@ import React from "react"
 import "./Portfolio.css"
 import Card from "./Card"
 import Portfolio_data from "./Portfolio_data"
+import useTitle from "../hook/useTitle"
 
 const Portfolio = () => {
+  useTitle('project')
   return (
     <>
       <section className='Portfolio top' id='portfolio'>
@@ -16,7 +18,7 @@ const Portfolio = () => {
 
           <div className='content grid'>
             {Portfolio_data.map((value, index) => {
-              return <Card key={index} image={value.image} category={value.category} totalLike={value.totalLike} title={value.title} id={value.id} link={value.link}/>
+              return <Card key={index} image={value.image} img1={value.img1} img2={value.img2} img3={value.img3} category={value.category} totalLike={value.totalLike} title={value.title} id={value.id} link={value.link} githublink={value.githublink}/>
             })}
 
             {/*<div className='box btn_shadow '>

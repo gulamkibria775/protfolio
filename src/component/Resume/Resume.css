@@ -1,6 +1,10 @@
 .Resume .heading h1 {
   font-size: 40px;
 }
+.down{
+margin-top: 30px;
+margin-bottom: 30px;
+}
 .Resume .content {
   max-width: 85%;
   margin: auto;

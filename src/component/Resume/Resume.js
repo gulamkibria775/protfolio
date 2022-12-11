@@ -2,11 +2,47 @@ import React from "react"
 import "./Resume.css"
 import ResumeApi from "./ResumeApi"
 import Card from "./Card"
+import useTitle from "../hook/useTitle"
+// import { Document, Page } from 'react-pdf';
+// import { Document,Page } from 'react-pdf/dist/esm/entry.webpack';
+// import samplepdf from './sample.pdf'
+// import pdfFile from './sample.pdf'
+
 
 const Resume = () => {
+
+useTitle('resume')
+  const onButtonClick = () => {
+		// using Java Script method to get PDF file
+		fetch('/sample.pdf').then(response => {
+			response.blob().then(blob => {
+				// Creating new object of PDF file
+				const fileURL = window.URL.createObjectURL(blob);
+				// Setting various property values
+				let alink = document.createElement('a');
+				alink.href = fileURL;
+				alink.download = 'sample.pdf';
+				alink.click();
+			})
+		})
+	}
   return (
     <>
       <section className='Resume' id='resume'>
+
+
+      <center>
+				
+				<h3 className="down">Click on below button to download PDF file</h3>
+				<button className='btn_shadow ' onClick={onButtonClick}>
+					Download PDF
+				</button>
+			</center>
+  
+
+ 
+
+
         <div className='container top'>
           <div className='heading text-center'>
             <h4>1+ YEAR OF EXPERIENCE</h4>
@@ -64,3 +100,9 @@ const Resume = () => {
 }
 
 export default Resume
+
+
+
+
+
+
